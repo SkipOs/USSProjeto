@@ -120,7 +120,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "CONSULTAR PRONTUÁRIO";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.onPront);
+            this.button3.Click += new System.EventHandler(this.ConPront);
             // 
             // MenuBase
             // 

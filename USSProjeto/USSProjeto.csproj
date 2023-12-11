@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadPaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadPaci.Designer.cs">
+      <DependentUpon>CadPaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadPront.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadPront.Designer.cs">
+      <DependentUpon>CadPront.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConPront.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConPront.Designer.cs">
+      <DependentUpon>ConPront.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadPaci.resx">
+      <DependentUpon>CadPaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadPront.resx">
+      <DependentUpon>CadPront.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConPront.resx">
+      <DependentUpon>ConPront.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuBase.resx">
       <DependentUpon>MenuBase.cs</DependentUpon>
     </EmbeddedResource>
