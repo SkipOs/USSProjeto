@@ -37,7 +37,7 @@ namespace USSProjeto
 
         }
 
-        private void onPront(object sender, EventArgs e)
+        private void ConPront(object sender, EventArgs e)
         {
 
         }
