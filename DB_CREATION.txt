@@ -1,0 +1,17 @@
+CREATE TABLE `tb_prontuario` (
+  `id` int(11) NOT NULL,
+  `paciente` int(11) NOT NULL,
+  `descricao` longtext,
+  PRIMARY KEY (`id`),
+  KEY `id_paciente_idx` (`paciente`),
+  CONSTRAINT `id_paciente` FOREIGN KEY (`paciente`) REFERENCES `tb_paciente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_prontuario` (
+  `id` int(11) NOT NULL,
+  `paciente` int(11) NOT NULL,
+  `descricao` longtext,
+  PRIMARY KEY (`id`),
+  KEY `id_paciente_idx` (`paciente`),
+  CONSTRAINT `id_paciente` FOREIGN KEY (`paciente`) REFERENCES `tb_paciente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
