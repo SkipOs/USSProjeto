@@ -1,19 +1,19 @@
 CREATE TABLE `tb_paciente` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `nascimento` datetime DEFAULT NULL,
-  `sexo` varchar(1) DEFAULT NULL,
-  `cpf` varchar(11) DEFAULT NULL,
+  `nome` varchar(60) NOT NULL,
+  `nascimento` date NOT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
   `tel` varchar(11) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
   `endereco` varchar(60) DEFAULT NULL,
-  `complemento` varchar(60) DEFAULT NULL,
+  `complemento` varchar(60) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `tb_prontuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `paciente` varchar(45) NOT NULL,
-  `descricao` longtext NOT NULL,
+  `paciente` varchar(60) DEFAULT NULL,
+  `descricao` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

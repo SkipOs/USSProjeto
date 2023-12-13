@@ -26,25 +26,46 @@ namespace USSProjeto
 
         private void Verificar(object sender, EventArgs e)
         {
-            string connetionString = null;
-            MySqlConnection cnn;
-            connetionString = "server=localhost;database=uss_banco;uid=root;pwd=admin;";
-            cnn = new MySqlConnection(connetionString);
-            try
+            if (EntraLogin.Text == "root" && EntraSenha.Text == "admin")
             {
-                cnn.Open();
-                MessageBox.Show("Conexão realizada");
-                this.Hide();
-                MenuBase menu = new MenuBase();
-                menu.Closed += (s, args) => this.Show();
-                menu.Disposed += (s, args) => this.Dispose();
-                menu.Show();
-                cnn.Close();
+                string connetionString = null;
+                MySqlConnection cnn;
+                connetionString = "server=localhost;database=uss_banco;uid=root;pwd=admin;";
+                cnn = new MySqlConnection(connetionString);
+                try
+                {
+                    cnn.Open();
+                    MessageBox.Show("Conexão realizada");
+                    this.Hide();
+                    MenuBase menu = new MenuBase();
+                    menu.Closed += (s, args) => this.Dispose();
+                    menu.Show();
+                    cnn.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível realizar conexão");
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show("Não foi possível realizar conexão");
+                MessageBox.Show("Usuário ou senha inválido");
             }
+        }
+
+        private void EntraLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EntraSenha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

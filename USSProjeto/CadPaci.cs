@@ -40,7 +40,7 @@ namespace USSProjeto
                     };
 
                     cmd.Parameters.AddWithValue("@Nome", nome.Text);
-                    cmd.Parameters.AddWithValue("@Nascimento", Convert.ToDateTime(nasc.Text).ToString("yyyy-MM-dd")); // Certifique-se de que nasc.Text é do tipo DateTime
+                    cmd.Parameters.AddWithValue("@Nascimento", Convert.ToDateTime(nasc.Text).ToString("yyyy-MM-dd"));
                     cmd.Parameters.AddWithValue("@Sexo", sex.Text);
                     cmd.Parameters.AddWithValue("@Cpf", cpf.Text);
                     cmd.Parameters.AddWithValue("@Tel", tel.Text);

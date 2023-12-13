@@ -53,8 +53,7 @@ namespace USSProjeto
 
         private void Logout(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            this.Dispose();
+            this.Close();
         }
     }
 }
