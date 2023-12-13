@@ -46,7 +46,6 @@
             this.nome = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -112,7 +111,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(17, 53);
+            this.groupBox1.Location = new System.Drawing.Point(17, 38);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(755, 455);
             this.groupBox1.TabIndex = 9;
@@ -160,11 +159,13 @@
             // 
             this.cpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpf.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.cpf.Location = new System.Drawing.Point(59, 186);
-            this.cpf.Mask = "000.000.000-00";
+            this.cpf.Mask = "000 000 000-00";
             this.cpf.Name = "cpf";
             this.cpf.Size = new System.Drawing.Size(167, 29);
             this.cpf.TabIndex = 18;
+            this.cpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // tel
             // 
@@ -175,6 +176,7 @@
             this.tel.Name = "tel";
             this.tel.Size = new System.Drawing.Size(167, 29);
             this.tel.TabIndex = 17;
+            this.tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // radioButton2
             // 
@@ -213,12 +215,14 @@
             // nasc
             // 
             this.nasc.CalendarFont = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nasc.CustomFormat = "YYYY-MM-DD";
             this.nasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.nasc.Location = new System.Drawing.Point(127, 115);
             this.nasc.Name = "nasc";
             this.nasc.Size = new System.Drawing.Size(171, 29);
             this.nasc.TabIndex = 14;
+            this.nasc.Value = new System.DateTime(2023, 12, 13, 0, 0, 0, 0);
             // 
             // nome
             // 
@@ -248,16 +252,6 @@
             this.label7.Size = new System.Drawing.Size(85, 24);
             this.label7.TabIndex = 9;
             this.label7.Text = "Telefone";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(611, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "ID atual";
             // 
             // button1
             // 
@@ -291,7 +285,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -302,7 +295,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -312,7 +304,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;

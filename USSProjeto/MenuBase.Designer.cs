@@ -134,8 +134,6 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel ClicaLogout;
-        private System.Windows.Forms.Label InfoLog;
-        private System.Windows.Forms.Label Texto1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;

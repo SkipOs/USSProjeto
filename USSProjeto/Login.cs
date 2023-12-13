@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,11 +37,11 @@ namespace USSProjeto
                 this.Hide();
                 MenuBase menu = new MenuBase();
                 menu.Closed += (s, args) => this.Show();
-                menu.Disposed += (s, args) => this.Show();
+                menu.Disposed += (s, args) => this.Dispose();
                 menu.Show();
                 cnn.Close();
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Não foi possível realizar conexão");
             }

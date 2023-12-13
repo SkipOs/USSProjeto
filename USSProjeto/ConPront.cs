@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace USSProjeto
 {
@@ -17,21 +18,6 @@ namespace USSProjeto
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void Voltar(object sender, EventArgs e)
         {
             this.Hide();
@@ -39,6 +25,11 @@ namespace USSProjeto
             menu.Closed += (s, args) => this.Close();
             menu.Show();
             this.Dispose();
+        }
+
+        private void ListaPaciente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

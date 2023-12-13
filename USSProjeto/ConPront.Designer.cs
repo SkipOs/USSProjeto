@@ -68,7 +68,6 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta Prontuário";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dataGridView1
             // 
@@ -84,7 +83,6 @@
             this.dataGridView1.RowHeadersWidth = 10;
             this.dataGridView1.Size = new System.Drawing.Size(739, 303);
             this.dataGridView1.TabIndex = 16;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // targetDataGridViewTextBoxColumn
             // 
@@ -117,6 +115,7 @@
             this.ListaPaciente.ScrollAlwaysVisible = true;
             this.ListaPaciente.Size = new System.Drawing.Size(675, 26);
             this.ListaPaciente.TabIndex = 14;
+            this.ListaPaciente.SelectedIndexChanged += new System.EventHandler(this.ListaPaciente_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -139,7 +138,6 @@
             this.label3.Size = new System.Drawing.Size(96, 24);
             this.label3.TabIndex = 6;
             this.label3.Text = "Prontuário";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button3
             // 

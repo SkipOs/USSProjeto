@@ -29,29 +29,42 @@ namespace USSProjeto
         {
             string connetionString = "server=localhost;database=uss_banco;uid=root;pwd=admin;";
             using (MySqlConnection cnn = new MySqlConnection(connetionString))
-            try
-            {
-                cnn.Open();
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = cnn;
+                try
+                {
+                    cnn.Open();
+                    MySqlCommand cmd = new MySqlCommand
+                    {
+                        Connection = cnn,
+                        CommandType = System.Data.CommandType.Text,
+                        CommandText = "INSERT INTO tb_paciente(nome, nascimento, sexo, cpf, tel, email, endereco, complemento) VALUES(@Nome, @Nascimento, @Sexo, @Cpf, @Tel, @Email, @Endereco, @Complemento)"
+                    };
 
-                cmd.CommandText = "INSERT INTO tb_paciente(nome, nascimento, sexo, cpf, tel, email, endereco, complemento) VALUES('" + nome.Text + "', " + nasc.Text + ", " + sex.Text + ", " + cpf.Text + ", " + tel.Text + ", '" + email.Text + "', '" + end.Text + "', '" + comp.Text + "'); ";
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Paciente inserido com sucesso.");
-                cnn.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Erro na inserção.");
-            }
-            finally
-            {
-                this.Hide();
-                MenuBase menu = new MenuBase();
-                menu.Closed += (s, args) => this.Close();
-                menu.Show();
-                this.Dispose();
-            }
+                    cmd.Parameters.AddWithValue("@Nome", nome.Text);
+                    cmd.Parameters.AddWithValue("@Nascimento", Convert.ToDateTime(nasc.Text).ToString("yyyy-MM-dd")); // Certifique-se de que nasc.Text é do tipo DateTime
+                    cmd.Parameters.AddWithValue("@Sexo", sex.Text);
+                    cmd.Parameters.AddWithValue("@Cpf", cpf.Text);
+                    cmd.Parameters.AddWithValue("@Tel", tel.Text);
+                    cmd.Parameters.AddWithValue("@Email", email.Text);
+                    cmd.Parameters.AddWithValue("@Endereco", end.Text);
+                    cmd.Parameters.AddWithValue("@Complemento", comp.Text);
+                    cmd.ExecuteNonQuery();
+
+
+                    MessageBox.Show("Paciente inserido com sucesso.");
+                    cnn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro na inserção: " + ex.Message);
+                }
+                finally
+                {
+                    this.Hide();
+                    MenuBase menu = new MenuBase();
+                    menu.Closed += (s, args) => this.Close();
+                    menu.Show();
+                    this.Dispose();
+                }
 
         }
     }

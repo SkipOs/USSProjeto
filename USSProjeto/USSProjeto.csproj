@@ -110,6 +110,7 @@
     <Compile Include="CadPront.Designer.cs">
       <DependentUpon>CadPront.cs</DependentUpon>
     </Compile>
+    <Compile Include="PacienteDAO.cs" />
     <Compile Include="ConPront.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +157,11 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CadPaci.datasource" />
+    <None Include="Properties\DataSources\CadPront.datasource" />
+    <None Include="Properties\DataSources\ConPront.datasource" />
+    <None Include="Properties\DataSources\Login.datasource" />
+    <None Include="Properties\DataSources\MenuBase.datasource" />
     <None Include="Properties\DataSources\MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.datasource" />
     <None Include="Properties\DataSources\MySql.Data.MySqlClient.Authentication.MySqlClearPasswordPlugin.datasource" />
     <None Include="Properties\DataSources\MySql.Data.MySqlClient.Authentication.MySqlNativePasswordPlugin.datasource" />
@@ -245,6 +251,10 @@
     <None Include="Properties\DataSources\MySqlX.XDevAPI.Relational.TableUpdateStatement.datasource" />
     <None Include="Properties\DataSources\MySqlX.XDevAPI.Schema.datasource" />
     <None Include="Properties\DataSources\MySqlX.XDevAPI.Session.datasource" />
+    <None Include="Properties\DataSources\PacienteDAO.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\USSProjeto.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\USSProjeto.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
