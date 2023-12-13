@@ -28,40 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.end = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
+            this.comp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.cpf = new System.Windows.Forms.MaskedTextBox();
+            this.tel = new System.Windows.Forms.MaskedTextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.sex = new System.Windows.Forms.RadioButton();
+            this.nasc = new System.Windows.Forms.DateTimePicker();
+            this.nome = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Logado como ";
             // 
             // label2
             // 
@@ -105,17 +94,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.end);
+            this.groupBox1.Controls.Add(this.email);
+            this.groupBox1.Controls.Add(this.comp);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.maskedTextBox2);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.cpf);
+            this.groupBox1.Controls.Add(this.tel);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.sex);
+            this.groupBox1.Controls.Add(this.nasc);
+            this.groupBox1.Controls.Add(this.nome);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label2);
@@ -130,35 +119,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro Paciente";
             // 
-            // label6
+            // end
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(611, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "ID atual";
+            this.end.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.end.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.end.Location = new System.Drawing.Point(106, 335);
+            this.end.Name = "end";
+            this.end.Size = new System.Drawing.Size(643, 32);
+            this.end.TabIndex = 21;
             // 
-            // label7
+            // email
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(434, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 24);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Telefone";
+            this.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.email.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(74, 259);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(675, 32);
+            this.email.TabIndex = 20;
             // 
-            // label8
+            // comp
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 259);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 24);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "E-mail";
+            this.comp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.comp.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comp.Location = new System.Drawing.Point(141, 411);
+            this.comp.Name = "comp";
+            this.comp.Size = new System.Drawing.Size(608, 32);
+            this.comp.TabIndex = 19;
             // 
             // label9
             // 
@@ -170,46 +156,25 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Endereço";
             // 
-            // label10
+            // cpf
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 411);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 24);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Complemento";
+            this.cpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpf.Location = new System.Drawing.Point(59, 186);
+            this.cpf.Mask = "000.000.000-00";
+            this.cpf.Name = "cpf";
+            this.cpf.Size = new System.Drawing.Size(167, 29);
+            this.cpf.TabIndex = 18;
             // 
-            // textBox1
+            // tel
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(74, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(675, 32);
-            this.textBox1.TabIndex = 13;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(127, 115);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(171, 29);
-            this.dateTimePicker1.TabIndex = 14;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(559, 117);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(44, 28);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "M";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.tel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tel.Location = new System.Drawing.Point(525, 186);
+            this.tel.Mask = "(99) 00000-0000";
+            this.tel.Name = "tel";
+            this.tel.Size = new System.Drawing.Size(167, 29);
+            this.tel.TabIndex = 17;
             // 
             // radioButton2
             // 
@@ -223,54 +188,76 @@
             this.radioButton2.Text = "F";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // label8
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(525, 186);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = 'x';
-            this.maskedTextBox1.Size = new System.Drawing.Size(167, 29);
-            this.maskedTextBox1.TabIndex = 17;
-            this.maskedTextBox1.Text = "(xx) xxxxx-xxxx";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(5, 259);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 24);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "E-mail";
             // 
-            // maskedTextBox2
+            // sex
             // 
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(59, 186);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.PromptChar = 'x';
-            this.maskedTextBox2.Size = new System.Drawing.Size(167, 29);
-            this.maskedTextBox2.TabIndex = 18;
-            this.maskedTextBox2.Text = "xxx.xxx.xxx-xx";
+            this.sex.AutoSize = true;
+            this.sex.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sex.Location = new System.Drawing.Point(559, 117);
+            this.sex.Name = "sex";
+            this.sex.Size = new System.Drawing.Size(44, 28);
+            this.sex.TabIndex = 15;
+            this.sex.TabStop = true;
+            this.sex.Text = "M";
+            this.sex.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // nasc
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(141, 411);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(608, 32);
-            this.textBox2.TabIndex = 19;
+            this.nasc.CalendarFont = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.nasc.Location = new System.Drawing.Point(127, 115);
+            this.nasc.Name = "nasc";
+            this.nasc.Size = new System.Drawing.Size(171, 29);
+            this.nasc.TabIndex = 14;
             // 
-            // textBox3
+            // nome
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(74, 259);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(675, 32);
-            this.textBox3.TabIndex = 20;
+            this.nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nome.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome.Location = new System.Drawing.Point(74, 44);
+            this.nome.Name = "nome";
+            this.nome.Size = new System.Drawing.Size(675, 32);
+            this.nome.TabIndex = 13;
             // 
-            // textBox4
+            // label10
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(106, 335);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(643, 32);
-            this.textBox4.TabIndex = 21;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 411);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(129, 24);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Complemento";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(434, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 24);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Telefone";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(611, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "ID atual";
             // 
             // button1
             // 
@@ -282,6 +269,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "SALVAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Salvar);
             // 
             // button2
             // 
@@ -293,6 +281,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Cancelar);
             // 
             // CadPaci
             // 
@@ -303,13 +292,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadPaci";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.CadPaci_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -319,8 +307,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -332,14 +318,14 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton sex;
+        private System.Windows.Forms.DateTimePicker nasc;
+        private System.Windows.Forms.TextBox nome;
+        private System.Windows.Forms.MaskedTextBox cpf;
+        private System.Windows.Forms.MaskedTextBox tel;
+        private System.Windows.Forms.TextBox end;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.TextBox comp;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

@@ -32,12 +32,17 @@ namespace USSProjeto
             try
             {
                 cnn.Open();
-                MessageBox.Show("Connection Open ! ");
+                MessageBox.Show("Conexão realizada");
+                this.Hide();
+                MenuBase menu = new MenuBase();
+                menu.Closed += (s, args) => this.Show();
+                menu.Disposed += (s, args) => this.Show();
+                menu.Show();
                 cnn.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Cannot open connection ! ");
+                MessageBox.Show("Não foi possível realizar conexão");
             }
         }
     }

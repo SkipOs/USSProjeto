@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace USSProjeto
 {
@@ -24,27 +25,36 @@ namespace USSProjeto
 
         private void ClicaLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
         }
 
         private void CadPaci(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CadPaci cadpaci = new CadPaci();
+            cadpaci.Closed += (s, args) => this.Close();
+            cadpaci.Show();
         }
 
         private void CadPront(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CadPront cadpront = new CadPront();
+            cadpront.Closed += (s, args) => this.Close();
+            cadpront.Show();
         }
 
         private void ConPront(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ConPront conpront = new ConPront();
+            conpront.Closed += (s, args) => this.Close();
+            conpront.Show();
         }
 
-        private void Logout(object sender, EventArgs e)
+        private void Logout(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            this.Dispose();
         }
     }
 }

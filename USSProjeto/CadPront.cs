@@ -22,5 +22,18 @@ namespace USSProjeto
 
         }
 
+        private void Salvar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancelar(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuBase menu = new MenuBase();
+            menu.Closed += (s, args) => this.Close();
+            menu.Show();
+            this.Dispose();
+        }
     }
 }
