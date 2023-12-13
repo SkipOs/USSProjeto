@@ -52,20 +52,5 @@ namespace USSProjeto
                 MessageBox.Show("Usuário ou senha inválido");
             }
         }
-
-        private void EntraLogin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Logo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EntraSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

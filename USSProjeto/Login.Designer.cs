@@ -50,7 +50,6 @@
             Logo.Size = new System.Drawing.Size(300, 167);
             Logo.TabIndex = 0;
             Logo.TabStop = false;
-            Logo.Click += new System.EventHandler(this.Logo_Click);
             // 
             // EntraLogin
             // 
@@ -61,7 +60,6 @@
             this.EntraLogin.Size = new System.Drawing.Size(300, 32);
             this.EntraLogin.TabIndex = 1;
             this.EntraLogin.Tag = "EntraLogin";
-            this.EntraLogin.TextChanged += new System.EventHandler(this.EntraLogin_TextChanged);
             // 
             // Usuario
             // 
@@ -93,7 +91,6 @@
             this.EntraSenha.TabIndex = 3;
             this.EntraSenha.Tag = "";
             this.EntraSenha.UseSystemPasswordChar = true;
-            this.EntraSenha.TextChanged += new System.EventHandler(this.EntraSenha_TextChanged);
             // 
             // Verifica
             // 
