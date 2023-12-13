@@ -55,6 +55,7 @@
             this.Lista.FormattingEnabled = true;
             resources.ApplyResources(this.Lista, "Lista");
             this.Lista.Name = "Lista";
+            this.Lista.SelectedIndexChanged += new System.EventHandler(this.Lista_SelectedIndexChanged);
             this.Lista.MouseEnter += new System.EventHandler(this.Lista_MouseEnter);
             // 
             // desc
@@ -62,6 +63,7 @@
             this.desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.desc, "desc");
             this.desc.Name = "desc";
+            this.desc.TextChanged += new System.EventHandler(this.desc_TextChanged);
             // 
             // label2
             // 

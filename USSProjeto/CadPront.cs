@@ -60,5 +60,14 @@ namespace USSProjeto
             Lista.DataSource = nomesPacientes;
         }
 
+        private void Lista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void desc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

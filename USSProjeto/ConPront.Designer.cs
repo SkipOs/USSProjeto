@@ -29,13 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ListaPaciente = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.targetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sessionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ListaPaciente = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -44,78 +41,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(611, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "ID atual";
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.ListaPaciente);
+            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic);
-            this.groupBox1.Location = new System.Drawing.Point(17, 56);
+            this.groupBox1.Location = new System.Drawing.Point(17, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(755, 465);
+            this.groupBox1.Size = new System.Drawing.Size(755, 509);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta Prontuário";
             // 
+            // ListaPaciente
+            // 
+            this.ListaPaciente.AllowDrop = true;
+            this.ListaPaciente.FormattingEnabled = true;
+            this.ListaPaciente.Location = new System.Drawing.Point(74, 42);
+            this.ListaPaciente.Name = "ListaPaciente";
+            this.ListaPaciente.Size = new System.Drawing.Size(675, 32);
+            this.ListaPaciente.TabIndex = 17;
+            this.ListaPaciente.SelectedIndexChanged += new System.EventHandler(this.Lista_SelectedIndexChanged);
+            this.ListaPaciente.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Lista_Update);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.targetDataGridViewTextBoxColumn,
-            this.sessionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tableUpdateStatementBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(10, 146);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 10;
-            this.dataGridView1.Size = new System.Drawing.Size(739, 303);
+            this.dataGridView1.Size = new System.Drawing.Size(739, 357);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // targetDataGridViewTextBoxColumn
-            // 
-            this.targetDataGridViewTextBoxColumn.DataPropertyName = "Target";
-            this.targetDataGridViewTextBoxColumn.HeaderText = "Médico";
-            this.targetDataGridViewTextBoxColumn.Name = "targetDataGridViewTextBoxColumn";
-            this.targetDataGridViewTextBoxColumn.ReadOnly = true;
-            this.targetDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // sessionDataGridViewTextBoxColumn
-            // 
-            this.sessionDataGridViewTextBoxColumn.DataPropertyName = "Session";
-            this.sessionDataGridViewTextBoxColumn.HeaderText = "Descrição";
-            this.sessionDataGridViewTextBoxColumn.Name = "sessionDataGridViewTextBoxColumn";
-            this.sessionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tableUpdateStatementBindingSource
             // 
             this.tableUpdateStatementBindingSource.DataSource = typeof(MySqlX.XDevAPI.Relational.TableUpdateStatement);
-            // 
-            // ListaPaciente
-            // 
-            this.ListaPaciente.AllowDrop = true;
-            this.ListaPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ListaPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ListaPaciente.FormattingEnabled = true;
-            this.ListaPaciente.ItemHeight = 24;
-            this.ListaPaciente.Location = new System.Drawing.Point(74, 45);
-            this.ListaPaciente.Name = "ListaPaciente";
-            this.ListaPaciente.ScrollAlwaysVisible = true;
-            this.ListaPaciente.Size = new System.Drawing.Size(675, 26);
-            this.ListaPaciente.TabIndex = 14;
-            this.ListaPaciente.SelectedIndexChanged += new System.EventHandler(this.ListaPaciente_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -159,7 +123,6 @@
             this.ClientSize = new System.Drawing.Size(784, 584);
             this.ControlBox = false;
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -171,20 +134,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox ListaPaciente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource tableUpdateStatementBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn targetDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox ListaPaciente;
     }
 }

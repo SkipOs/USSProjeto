@@ -9,9 +9,7 @@ namespace USSProjeto
 {
     public class PacienteDAO
     {
-#pragma warning disable IDE0044 // Adicionar modificador somente leitura
         private string connectionString = "server=localhost;database=uss_banco;uid=root;pwd=admin;";
-#pragma warning restore IDE0044 // Adicionar modificador somente leitura
 
         public List<string> GetPacientes()
         {

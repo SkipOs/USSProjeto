@@ -55,7 +55,7 @@
             // 
             this.EntraLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EntraLogin.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntraLogin.Location = new System.Drawing.Point(37, 271);
+            this.EntraLogin.Location = new System.Drawing.Point(37, 260);
             this.EntraLogin.Name = "EntraLogin";
             this.EntraLogin.Size = new System.Drawing.Size(300, 32);
             this.EntraLogin.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             this.Usuario.AutoSize = true;
             this.Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuario.Location = new System.Drawing.Point(33, 244);
+            this.Usuario.Location = new System.Drawing.Point(33, 233);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(74, 24);
             this.Usuario.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             this.Senha.AutoSize = true;
             this.Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Senha.Location = new System.Drawing.Point(33, 322);
+            this.Senha.Location = new System.Drawing.Point(33, 311);
             this.Senha.Name = "Senha";
             this.Senha.Size = new System.Drawing.Size(65, 24);
             this.Senha.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             this.EntraSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EntraSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntraSenha.Location = new System.Drawing.Point(37, 349);
+            this.EntraSenha.Location = new System.Drawing.Point(37, 338);
             this.EntraSenha.Name = "EntraSenha";
             this.EntraSenha.Size = new System.Drawing.Size(300, 32);
             this.EntraSenha.TabIndex = 3;
