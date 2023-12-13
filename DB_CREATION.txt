@@ -1,19 +1,19 @@
-CREATE TABLE `tb_prontuario` (
-  `id` int(11) NOT NULL,
-  `paciente` int(11) NOT NULL,
-  `descricao` longtext,
-  PRIMARY KEY (`id`),
-  KEY `id_paciente_idx` (`paciente`),
-  CONSTRAINT `id_paciente` FOREIGN KEY (`paciente`) REFERENCES `tb_paciente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `tb_paciente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) NOT NULL,
+  `nascimento` datetime DEFAULT NULL,
+  `sexo` varchar(1) DEFAULT NULL,
+  `cpf` varchar(11) DEFAULT NULL,
+  `tel` varchar(11) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `endereco` varchar(60) DEFAULT NULL,
+  `complemento` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 CREATE TABLE `tb_prontuario` (
-  `id` int(11) NOT NULL,
-  `paciente` int(11) NOT NULL,
-  `descricao` longtext,
-  `medico` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id_paciente_idx` (`paciente`),
-  CONSTRAINT `id_paciente` FOREIGN KEY (`paciente`) REFERENCES `tb_paciente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `paciente` varchar(45) NOT NULL,
+  `descricao` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
